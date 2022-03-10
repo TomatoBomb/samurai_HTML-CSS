@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 0.8rem;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+/*--------------初期設定------------------*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+
+
+/*--------------header--------------------*/
+#header nav {
+    margin-bottom: 30px;
+}
+#header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+#header li {
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border: solid 1px black;
+}
+#header li:hover {
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+
+/*-----------------コンテンツ-------------------*/
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    width: 65%;
+}
+aside {
+    width: 30%;
+    background-color: #f99;
+    padding: 20px;
+}
+/*---------メインメニュー--------------*/
+main article {
+    margin: 0 0 30px 0;
+}
+article h2 {
+    background-color: orange;
+    border-left: solid 20px red;
+    padding: 15px 15px 15px 23px;
+    margin-bottom: 20px;
+    color: white;
+}
+article img {
+    width: 40%;
+}
+article p {
+    width: 55%;
+}
+/*--------------float--------------*/
+
+.article1 img {
+    float: left;
+}
+.article1 p {
+    float: right;
+}
+.article2 img {
+    float: right;
+}
+.article2 p {
+    float: left;
+}
+
+/*------clearfix-------*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*---------サイドメニュー--------------*/
+
+aside .box {
+    margin: 0 auto 30px auto;
+    padding: 0 0 20px 0;
+    background-image: url("../images/side_box.png");
+    background-position: bottom;
+}
+.box h2 {
+    text-align: center;
+    background-image: url("../images/side_box_h2.png");
+    background-position: center;
+    color: white;
+}
+.box h2:hover {
+    cursor: pointer;
+    transform: translateY(3px);
+    filter: drop-shadow(3px 3px 3px black);
+}
+.boxBody {
+    background-color: white;
+    display: none;
+}
+.boxBody li {
+    padding: 5px;
+    border: solid 1px #C36;
+}
+.boxBody li:hover {
+    box-shadow: 4px 4px 3px black;
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+
